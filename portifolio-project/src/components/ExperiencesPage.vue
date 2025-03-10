@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <p class="titulo mx-auto text-center mb-4">Experiências</p>
+    <p class="title mx-auto text-center mb-12">Experiências</p>
 
     <v-row>
       <v-col class="d-flex flex-column justify-start border-e-lg" cols="3">
@@ -24,7 +24,7 @@
             <v-card-subtitle class="ml-auto">{{ cards[selectedButton]?.subtitle }}</v-card-subtitle>
           </div>
           <v-card-title class="text-purple-lighten-1">{{ cards[selectedButton]?.company }}</v-card-title>
-          <v-card-text>
+          <v-card-text class="text-grey-lighten-1">
             <p>{{ cards[selectedButton]?.description }}</p>
           </v-card-text>
         </v-card>
@@ -57,9 +57,6 @@ const selectedButton = ref<keyof typeof cards>(menuItems[0]);
 </script>
 
 <style scoped>
-.titulo {
-  font-family: 'Michroma', sans-serif;
-}
 
 .menu-item {
   justify-content: flex-start;

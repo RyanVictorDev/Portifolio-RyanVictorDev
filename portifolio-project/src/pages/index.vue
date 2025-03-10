@@ -3,6 +3,7 @@
     <NavBar />
     <HomePage />
     <ExperiencesPage />
+    <SkillsPage />
   </v-app>
 </template>
 
@@ -10,4 +11,6 @@
 import ExperiencesPage from '@/components/ExperiencesPage.vue';
 import HomePage from '@/components/HomePage.vue';
 import NavBar from '@/components/NavBar.vue';
+import SkillsPage from '@/components/SkillsPage.vue';
+
 </script>
