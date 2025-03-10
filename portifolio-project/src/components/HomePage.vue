@@ -1,9 +1,7 @@
 <template>
-  <v-container class="fill-height">
-    <v-responsive
-      class="align-centerfill-height mx-auto"
-    >
-      <div>
+  <v-container class="fill-height pa-0">
+    <v-responsive class="d-flex align-center" height="100vh">
+      <div class="d-flex my-auto">
         <v-row class="mx-auto justify-center">
           <v-col class="text-center my-auto mx-auto" cols="7">
             <div class="mb-4">
@@ -29,3 +27,6 @@
 <script setup lang="ts">
   //
 </script>
+
+<style>
+</style>
