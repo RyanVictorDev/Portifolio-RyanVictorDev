@@ -1,8 +1,8 @@
 <template>
   <v-app class="bg-black fill-height">
     <NavBar />
-    <HomePage />
-    <ExperiencesPage />
+    <HomePage class="mb-12" />
+    <ExperiencesPage class="mb-12" />
     <SkillsPage />
   </v-app>
 </template>

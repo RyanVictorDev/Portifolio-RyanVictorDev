@@ -15,5 +15,6 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     SkillsPage: typeof import('./src/components/SkillsPage.vue')['default']
     SkilsPage: typeof import('./src/components/SkilsPage.vue')['default']
+    TypewriterEffect: typeof import('./src/components/TypewriterEffect.vue')['default']
   }
 }
