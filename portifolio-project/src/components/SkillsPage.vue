@@ -45,14 +45,14 @@
 import { ref } from 'vue';
 
 const files = ref([
-  "html.txt",
-  "css.txt",
-  "js.txt",
-  "vue.txt",
-  "quasar.txt",
-  "java.txt",
-  "spring.txt",
-  "docker.txt",
+  "html",
+  "css",
+  "js",
+  "vue",
+  "quasar",
+  "java",
+  "spring",
+  "docker",
 ]);
 </script>
 
