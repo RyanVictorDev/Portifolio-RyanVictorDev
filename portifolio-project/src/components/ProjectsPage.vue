@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <p class="title mx-auto text-center mb-12 pt-12">Projetos</p>
-    <v-row class="justify-space-between">
+    <v-row class="justify-space-evenly ga-12">
       <v-col class="" cols="5">
         <ProjectComponent
           title="Locadora de Livros - Flutter"
@@ -10,8 +10,24 @@
           image="/images/flutterMockupOriginal.png"
           background-color="blue"
         />
+
+        <ProjectComponent
+          title="Locadora de Livros - Flutter"
+          description="Um projeto incrível desenvolvido com Vue e Vuetify."
+          :technologies="['Flutter', 'Dart']"
+          image="/images/note.png"
+          background-color="purple"
+        />
       </v-col>
       <v-col cols="5">
+        <ProjectComponent
+          title="Locadora de Livros - Quasar"
+          description="Um projeto incrível desenvolvido com Vue e Vuetify."
+          :technologies="['Vue', 'Quasar', 'Robot', 'Docker']"
+          image="/images/note.png"
+          background-color="purple"
+        />
+
         <ProjectComponent
           title="Locadora de Livros - Flutter"
           description="Um projeto incrível desenvolvido com Vue e Vuetify."

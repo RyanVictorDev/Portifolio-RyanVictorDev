@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <div class="image rounded-xl d-flex justify-center mb-3 pa-2" :style="{ backgroundColor: backgroundColor }">
+    <div class="image rounded-xl d-flex justify-center mb-3 pa-2" :style="{ backgroundColor: backgroundColor, backgroundImage: `linear-gradient(${backgroundColor}, rgb(5, 5, 5))` }">
       <img class="projectImage" :src="image" alt="">
     </div>
 
@@ -51,12 +51,25 @@ defineProps({
 <style scoped>
 .image {
   width: 100%;
-  min-height: fit-content;
+  max-height: fit-content;
+  transition: all 1.5s;
+}
+
+.image:hover {
+  background-image: radial-gradient() (rgb(0, 0, 0), rgb(37, 37, 37));
 }
 
 .projectImage {
   max-width: 100%;
   height: auto;
-  object-fit: contain;
+  /* margin-bottom: -3rem; */
+  object-fit: cover;
+  transition: all 0.5s;
+}
+
+.projectImage:hover {
+  transform: scale(1.1);
+  transform: translateY(-1.5rem);
+  filter: drop-shadow(0 0 10px #ffffff7a);
 }
 </style>
