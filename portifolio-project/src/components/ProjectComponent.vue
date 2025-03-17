@@ -1,9 +1,8 @@
 <template>
   <v-container>
-    <div
-      class="image rounded-lg mb-3"
-      :style="{ backgroundImage: `url(${image})` }"
-    ></div>
+    <div class="image rounded-xl d-flex justify-center mb-3 pa-2" :style="{ backgroundColor: backgroundColor }">
+      <img class="projectImage" :src="image" alt="">
+    </div>
 
     <div class="mb-3">
       <p class="text-h6 mx-auto text-left mb-1">{{ title }}</p>
@@ -12,8 +11,8 @@
 
     <v-row>
       <v-col v-for="tecnology in technologies" :key="tecnology" cols="auto">
-        <v-card class="px-2 bg-#212121">
-          <v-card-title class="text-center text-white">
+        <v-card class="pa-0 bg-#212121">
+          <v-card-title class="text-body-2 text-center text-white">
             {{ tecnology }}
           </v-card-title>
         </v-card>
@@ -40,14 +39,24 @@ defineProps({
     type: String,
     required: true,
   },
+  backgroundColor: {
+    type: String,
+    required: false,
+    default: '#fff',
+  },
 });
+
 </script>
 
 <style scoped>
 .image {
   width: 100%;
-  height: 450px;
-  background-size: cover;
-  background-position: center;
+  min-height: fit-content;
+}
+
+.projectImage {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 </style>

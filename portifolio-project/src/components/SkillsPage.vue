@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <p class="title mx-auto text-center mb-12">Competências</p>
+    <p class="title mx-auto text-center mb-12 pt-12">Competências</p>
 
     <div class="vsCopy d-flex flex-column rounded-lg">
       <div class="vsHeader rounded-t-lg">

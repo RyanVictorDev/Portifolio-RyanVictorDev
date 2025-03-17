@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <p class="title mx-auto text-center mb-12">Experiências</p>
+    <p class="title mx-auto text-center mb-12 pt-12">Experiências</p>
 
     <v-row>
       <v-col class="d-flex flex-column justify-start border-e-lg" cols="3">
