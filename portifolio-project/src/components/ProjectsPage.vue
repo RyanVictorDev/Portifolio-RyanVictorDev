@@ -9,6 +9,7 @@
           :technologies="['Flutter', 'Dart']"
           image="/images/flutterMockupOriginal.png"
           background-color="blue"
+          project-link="https://github.com/RyanVictorDev/Locadora-Flutter"
         />
 
         <ProjectComponent
@@ -16,7 +17,8 @@
           description="Um projeto incrível desenvolvido com Vue e Vuetify."
           :technologies="['Flutter', 'Dart']"
           image="/images/note.png"
-          background-color="purple"
+          background-color="red"
+          project-link="https://github.com/RyanVictorDev/Locadora-Ryan"
         />
       </v-col>
       <v-col cols="5">
@@ -26,6 +28,7 @@
           :technologies="['Vue', 'Quasar', 'Robot', 'Docker']"
           image="/images/note.png"
           background-color="purple"
+          project-link="https://github.com/RyanVictorDev/Locadora-Ryan"
         />
 
         <ProjectComponent
@@ -33,7 +36,7 @@
           description="Um projeto incrível desenvolvido com Vue e Vuetify."
           :technologies="['Flutter', 'Dart']"
           image="/images/flutterMockupOriginal.png"
-          background-color="blue"
+          background-color="green"
         />
       </v-col>
     </v-row>

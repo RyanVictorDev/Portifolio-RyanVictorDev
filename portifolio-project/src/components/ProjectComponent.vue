@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <div class="image rounded-xl d-flex justify-center mb-3 pa-2" :style="{ backgroundColor: backgroundColor, backgroundImage: `linear-gradient(${backgroundColor}, rgb(5, 5, 5))` }">
+    <div class="image rounded-xl d-flex justify-center mb-3 pa-2" :style="{ backgroundColor: backgroundColor, backgroundImage: `linear-gradient(${backgroundColor}, rgb(3, 3, 3))` }">
       <img class="projectImage" :src="image" alt="">
     </div>
 
@@ -9,7 +9,7 @@
       <p class="text-body-1 font-weight-light">{{ description }}</p>
     </div>
 
-    <v-row>
+    <v-row class="mb-1">
       <v-col v-for="tecnology in technologies" :key="tecnology" cols="auto">
         <v-card class="pa-0 bg-#212121">
           <v-card-title class="text-body-2 text-center text-white">
@@ -18,6 +18,8 @@
         </v-card>
       </v-col>
     </v-row>
+
+    <a class="text-decoration-none text-grey" target="_blank" :href="projectLink">Acessar projeto -></a>
   </v-container>
 </template>
 
@@ -43,6 +45,11 @@ defineProps({
     type: String,
     required: false,
     default: '#fff',
+  },
+  projectLink: {
+    type: String,
+    required: false,
+    default: '',
   },
 });
 
