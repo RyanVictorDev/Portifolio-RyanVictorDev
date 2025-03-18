@@ -24,6 +24,26 @@
           </v-col>
         </v-row>
       </div>
+
+      <div class="d-flex ga-12 justify-center button-container">
+        <div>
+          <v-btn class="button mx-auto rounded-pill border" color="transparent" dark target="_blank" href="https://github.com/RyanVictorDev">
+            <v-icon size="large">mdi-github</v-icon>
+          </v-btn>
+        </div>
+
+        <div>
+          <v-btn class="button mx-auto rounded-pill border" color="transparent" dark target="_blank" href="https://www.linkedin.com/in/ryan-victor-dev">
+            <v-icon size="large">mdi-linkedin</v-icon>
+          </v-btn>
+        </div>
+
+        <div>
+          <v-btn class="button mx-auto rounded-pill border" color="transparent" dark href="">
+            <v-icon size="large">mdi-file-account</v-icon>
+          </v-btn>
+        </div>
+      </div>
     </v-responsive>
   </v-container>
 </template>
@@ -32,7 +52,7 @@
   import Typewriter from './TypewriterEffect.vue';
 </script>
 
-<style>
+<style scoped>
 .video-background {
   position: relative;
   width: 100%;
@@ -56,6 +76,20 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  /* text-align: center; */
+}
+
+.button-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 3;
+}
+
+.button{
+  width: 50px;
+  height: 60px;
 }
 </style>
