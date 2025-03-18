@@ -2,7 +2,7 @@
   <v-container>
     <p class="title mx-auto text-center mb-12 pt-12">Projetos</p>
     <v-row class="justify-space-evenly ga-12">
-      <v-col class="" cols="5">
+      <v-col cols="8" md="5">
         <ProjectComponent
           title="Locadora de Livros - Flutter"
           description="Um projeto incrível desenvolvido com Vue e Vuetify."
@@ -21,7 +21,7 @@
           project-link="https://github.com/RyanVictorDev/Locadora-Ryan"
         />
       </v-col>
-      <v-col cols="5">
+      <v-col cols="8" md="5">
         <ProjectComponent
           title="Locadora de Livros - Quasar"
           description="Um projeto incrível desenvolvido com Vue e Vuetify."

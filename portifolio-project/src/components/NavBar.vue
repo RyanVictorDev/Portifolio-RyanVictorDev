@@ -1,19 +1,43 @@
 <template>
   <div class="nav-bar mx-auto rounded-xl border px-6">
-    <v-tabs v-model="tabs" slider-color="purple">
+    <v-tabs v-if="display.mdAndUp" v-model="tabs" slider-color="purple">
       <v-tab class="v-tab text-body-2 pa-0" text="Home" @click="scrollTo('home')"></v-tab>
       <v-tab class="v-tab text-body-2" text="Experiências" @click="scrollTo('experiences')"></v-tab>
       <v-tab class="v-tab text-body-2" text="Competências" @click="scrollTo('skills')"></v-tab>
       <v-tab class="v-tab text-body-2" text="Projetos" @click="scrollTo('projects')"></v-tab>
       <v-tab class="v-tab text-body-2" text="Contato" @click="scrollTo('contact')"></v-tab>
     </v-tabs>
+
+    <v-menu v-else>
+      <template v-slot:activator="{ props }">
+        <v-btn v-bind="props" class="bg-transparent pa-0 border-none">
+          <v-icon>mdi-menu</v-icon>
+        </v-btn>
+      </template>
+
+      <v-list>
+        <v-list-item v-for="item in menuItems" :key="item.text" @click="scrollTo(item.target)">
+          <v-list-item-title>{{ item.text }}</v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-menu>
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 import { ref } from 'vue';
+import { useDisplay } from 'vuetify';
 
+const display = useDisplay();
 const tabs = ref(null);
+
+const menuItems = [
+  { text: 'Home', target: 'home' },
+  { text: 'Experiências', target: 'experiences' },
+  { text: 'Competências', target: 'skills' },
+  { text: 'Projetos', target: 'projects' },
+  { text: 'Contato', target: 'contact' },
+];
 
 const scrollTo = (sectionId: string) => {
   const section = document.getElementById(sectionId);
