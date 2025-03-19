@@ -12,7 +12,7 @@
               <h1 class="text-h2 text-left font-weight-medium">RYAN VICTOR</h1>
               <Typewriter />
             </div>
-            <div class="text-body-1 font-weight-light text-left text-grey-lighten-1">Olá, sou Ryan Victor, desenvolvedor full stack apaixonado por tecnologia. Trabalho com Vue.js, Quasar, Java e Spring Boot, criando soluções web rápidas e eficientes. Sempre em busca de novos desafios, estou pronto para transformar ideias em realidade.</div>
+            <div class="text-body-1 text-justify font-weight-light text-left text-grey-lighten-1">Olá, sou Ryan Victor, desenvolvedor full stack apaixonado por tecnologia. Trabalho com Vue.js, Quasar, Java e Spring Boot, criando soluções web rápidas e eficientes. Sempre em busca de novos desafios, estou pronto para transformar ideias em realidade.</div>
           </v-col>
 
           <v-col class="my-auto mx-auto" cols="3">
@@ -24,8 +24,8 @@
           </v-col>
         </v-row>
 
-        <v-row v-else lass="mx-auto justify-center">
-          <v-col class="my-auto mx-auto" cols="8">
+        <v-row v-else lass="mx-auto">
+          <v-col class="mx-auto" cols="8">
             <v-img
               class="my-auto"
               height="200"
@@ -33,14 +33,14 @@
             />
           </v-col>
 
-          <v-col class="text-center my-auto mx-auto" cols="8">
+          <v-col class="text-center mx-auto" cols="8">
             <div class="mb-4">
               <h1 class="text-h5 text-left font-weight-medium">RYAN VICTOR</h1>
               <Typewriter
                 font="text-body-2"
               />
             </div>
-            <div class="text-body-2 font-weight-light text-left text-grey-lighten-1">Olá, sou Ryan Victor, desenvolvedor full stack apaixonado por tecnologia. Trabalho com Vue.js, Quasar, Java e Spring Boot, criando soluções web rápidas e eficientes. Sempre em busca de novos desafios, estou pronto para transformar ideias em realidade.</div>
+            <div class="text-body-2 text-justify font-weight-light text-left text-grey-lighten-1">Olá, sou Ryan Victor, desenvolvedor full stack apaixonado por tecnologia. Trabalho com Vue.js, Quasar, Java e Spring Boot, criando soluções web rápidas e eficientes. Sempre em busca de novos desafios, estou pronto para transformar ideias em realidade.</div>
           </v-col>
         </v-row>
       </div>

@@ -22,6 +22,7 @@
 
         <div class="d-flex ga-3 mx-auto sendButton">
           <v-btn
+            class="text-body-2"
             color="grey-darken-3"
             block
             @click="cancelEmail"
@@ -30,6 +31,7 @@
           </v-btn>
 
           <v-btn
+            class="text-body-2"
             :disabled="!valid"
             color="purple"
             block
