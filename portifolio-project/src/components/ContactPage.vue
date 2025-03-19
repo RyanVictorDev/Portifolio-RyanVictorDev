@@ -2,7 +2,7 @@
   <v-container class="d-flex flex-column fill-height">
     <p class="title mx-auto text-center mb-12 pt-12">Projetos</p>
 
-    <v-card class="pa-6 rounded-lg card" width="800">
+    <v-card class="pa-6 rounded-lg card">
       <v-card-title class="text-h5 text-center mb-6">Entre em Contato</v-card-title>
 
       <v-form ref="form" v-model="valid" lazy-validation>
@@ -69,6 +69,7 @@ const cancelEmail = () => {
 
 <style scoped>
 .card {
+  max-width: 90%;
   background-color: rgba(53, 53, 53, 0.274);
 }
 

@@ -5,11 +5,18 @@ import Typewriter from 'typewriter-effect/dist/core';
 
 const typewriterElement = ref(null);
 
-const texts = [
-  "DESENVOLVEDOR FULL STACK",
-  "FREE LANCER",
-  "TÉCNICO EM INFORMÁTICA",
-];
+const props = defineProps({
+  texts: {
+    type: Array as () => string[],
+    required: false,
+    default: () => [  "DESENVOLVEDOR FULL STACK", "FREE LANCER", "TÉCNICO EM INFORMÁTICA",],
+  },
+  font: {
+    type: String,
+    required: false,
+    default: "text-h6",
+  },
+});
 
 onMounted(() => {
   new Typewriter(typewriterElement.value, {
@@ -19,13 +26,13 @@ onMounted(() => {
   })
     .callFunction(() => console.log("Iniciando Typewriter"))
     .pauseFor(1000)
-    .typeString(texts[0])
+    .typeString(props.texts[0])
     .pauseFor(1500)
     .deleteAll()
-    .typeString(texts[1])
+    .typeString(props.texts[1])
     .pauseFor(1500)
     .deleteAll()
-    .typeString(texts[2])
+    .typeString(props.texts[2])
     .pauseFor(1500)
     .deleteAll()
     .start();
@@ -35,8 +42,8 @@ onMounted(() => {
 <template>
   <v-container class="d-flex justify-left align-left text-left pa-0">
     <v-card class="bg-transparent d-flex">
-      <p class="text-h6 font-weight-medium pr-1">SOU</p>
-      <p class="text-h6 font-weight-medium" ref="typewriterElement"></p>
+      <p :class="`${props.font} font-weight-medium pr-1`">SOU</p>
+      <p :class="`${props.font} font-weight-medium`" ref="typewriterElement"></p>
     </v-card>
   </v-container>
 </template>
