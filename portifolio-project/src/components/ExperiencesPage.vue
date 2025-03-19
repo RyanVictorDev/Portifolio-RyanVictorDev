@@ -2,8 +2,8 @@
   <v-container>
     <p class="title mx-auto text-center mb-12 pt-12">Experiências</p>
 
-    <v-row>
-      <v-col v-if="display.mdAndUp.value" class="d-flex flex-column justify-start border-e-lg" cols="3">
+    <v-row v-if="display.mdAndUp.value">
+      <v-col class="d-flex flex-column justify-start border-e-md" cols="3">
         <v-btn
           v-for="(item, index) in menuItems"
           :key="index"
@@ -17,7 +17,22 @@
         </v-btn>
       </v-col>
 
-      <v-col v-else class="d-flex mx-auto flex-column border-b-lg" cols="10">
+      <v-col class="d-flex flex-column">
+        <v-card class="overflow-auto bg-black" height="200">
+          <div class="d-flex justify-between align-center">
+            <v-card-title>{{ cards[selectedButton]?.title }}</v-card-title>
+            <v-card-subtitle class="ml-auto">{{ cards[selectedButton]?.subtitle }}</v-card-subtitle>
+          </div>
+          <v-card-title class="text-purple-lighten-1">{{ cards[selectedButton]?.company }}</v-card-title>
+          <v-card-text class="text-grey-lighten-1">
+            <p>{{ cards[selectedButton]?.description }}</p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row v-else>
+      <v-col class="d-flex mx-auto flex-column border-b-md" cols="9">
         <v-btn
           v-for="(item, index) in menuItems"
           :key="index"
