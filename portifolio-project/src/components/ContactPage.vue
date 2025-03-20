@@ -1,6 +1,6 @@
 <template>
   <v-container class="d-flex flex-column fill-height">
-    <p class="title mx-auto text-center mb-12 pt-12">Projetos</p>
+    <p class="title mx-auto text-center mb-12 pt-12">Contato</p>
 
     <v-card class="pa-6 rounded-lg card">
       <v-card-title class="text-h5 text-center mb-6">Entre em Contato</v-card-title>
@@ -71,6 +71,7 @@ const cancelEmail = () => {
 
 <style scoped>
 .card {
+  min-width: 60%;
   max-width: 90%;
   background-color: rgba(53, 53, 53, 0.274);
 }

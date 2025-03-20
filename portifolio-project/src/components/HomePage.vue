@@ -59,7 +59,7 @@
         </div>
 
         <div>
-          <v-btn class="button mx-auto rounded-pill border" color="transparent" dark href="/curriculo.pdf" download="Ryan-Victor-Curriculo.pdf">
+          <v-btn class="button mx-auto rounded-pill border" color="transparent" dark href="/Currículo-Ryan_Victor.pdf" download="Ryan-Victor-Curriculo.pdf">
             <v-icon size="large">mdi-file-account</v-icon>
           </v-btn>
         </div>
