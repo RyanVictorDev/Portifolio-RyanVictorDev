@@ -16,3 +16,21 @@ body {
 .title {
   font-family: 'Michroma', sans-serif;
 }
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #222;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #AB47BC;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #8E24AA;
+}

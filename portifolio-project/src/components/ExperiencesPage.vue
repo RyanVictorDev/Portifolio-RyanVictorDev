@@ -71,10 +71,10 @@ const display = useDisplay();
 
 const cards = {
   "WDA Tecnologia e Inovação": {
-    title: "Estagiário em Desenvolvimento de Full Stack",
+    title: "Desenvolvedor Full Stack",
     subtitle: "Ago 2024 - Presente",
     company: "WDA Group",
-    description: "Desenvolvimento de aplicações web com Vue.js, Quasar, Java e Spring Boot."
+    description: "Como estagiário, tive a oportunidade de aprimorar diversos conhecimentos técnicos e expandir minhas habilidades no desenvolvimento de software. Meu trabalho começou com o levantamento de requisitos, onde aprendi a entender as necessidades do cliente e traduzi-las em soluções técnicas. Em seguida, aprofundei meus conhecimentos em Design, buscando sempre criar interfaces agradáveis e funcionais, focadas na melhor experiência para o usuário. Com isso, passei a trabalhar na prototipação de interfaces utilizando o Figma, o que me permitiu transformar as ideias e requisitos em modelos visuais de forma rápida e eficiente. No desenvolvimento, tive a chance de trabalhar com o Quasar Framework, criando interfaces dinâmicas e responsivas, além de trabalhar com o Spring Boot para desenvolvimento back-end, onde aprimorei meus conhecimentos em Java. Também tive a oportunidade de aplicar o Flutter no desenvolvimento de aplicativos móveis, ampliando minha visão sobre o desenvolvimento cross-platform. Por fim, fui envolvido em processos de testes, tanto unitários quanto de interface, o que me permitiu entender a importância de garantir a qualidade do código e das interfaces antes de seu lançamento."
   },
   "Experiências": {
     title: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -101,4 +101,23 @@ const selectedButton = ref<keyof typeof cards>(menuItems[0]);
   color: #AB47BC !important;
   font-weight: bold;
 }
+
+.v-card::-webkit-scrollbar {
+  width: 6px;
+}
+
+.v-card::-webkit-scrollbar-track {
+  background: #222;
+  border-radius: 10px;
+}
+
+.v-card::-webkit-scrollbar-thumb {
+  background: #AB47BC;
+  border-radius: 10px;
+}
+
+.v-card::-webkit-scrollbar-thumb:hover {
+  background: #8E24AA;
+}
+
 </style>
