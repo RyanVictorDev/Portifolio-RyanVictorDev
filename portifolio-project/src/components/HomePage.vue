@@ -71,36 +71,8 @@
 <script setup lang="ts">
   import Typewriter from './TypewriterEffect.vue';
   import { useDisplay } from 'vuetify';
-  import ScrollReveal from "scrollreveal";
-  import { onMounted } from 'vue';
 
   const display = useDisplay();
-
-  onMounted(() => {
-    ScrollReveal().reveal(".reveal", {
-      duration: 1000,
-      origin: "bottom",
-      distance: "50px",
-      delay: 200,
-      reset: true,
-    });
-
-    ScrollReveal().reveal(".fade-left", {
-      duration: 1200,
-      origin: "left",
-      distance: "100px",
-      delay: 300,
-      reset: true,
-    });
-
-    ScrollReveal().reveal(".fade-right", {
-      duration: 1200,
-      origin: "right",
-      distance: "100px",
-      delay: 300,
-      reset: true,
-    });
-  });
 </script>
 
 <style scoped>

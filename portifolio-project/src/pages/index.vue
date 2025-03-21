@@ -17,4 +17,33 @@ import NavBar from '@/components/NavBar.vue';
 import ProjectsPage from '@/components/ProjectsPage.vue';
 import SkillsPage from '@/components/SkillsPage.vue';
 
+import ScrollReveal from "scrollreveal";
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  ScrollReveal().reveal(".reveal", {
+    duration: 1000,
+    origin: "bottom",
+    distance: "50px",
+    delay: 200,
+    reset: true,
+  });
+
+  ScrollReveal().reveal(".fade-left", {
+    duration: 1200,
+    origin: "left",
+    distance: "100px",
+    delay: 300,
+    reset: true,
+  });
+
+  ScrollReveal().reveal(".fade-right", {
+    duration: 1200,
+    origin: "right",
+    distance: "100px",
+    delay: 300,
+    reset: true,
+  });
+});
+
 </script>

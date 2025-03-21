@@ -57,7 +57,7 @@ defineProps({
 
 <style scoped>
 .componentWidth {
-  width: 95%;
+  max-width: 95%;
 }
 
 .image {
@@ -73,7 +73,6 @@ defineProps({
 .projectImage {
   max-width: 100%;
   height: auto;
-  /* margin-bottom: -3rem; */
   object-fit: cover;
   transition: all 0.5s;
 }

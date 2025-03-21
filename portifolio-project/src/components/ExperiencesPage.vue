@@ -36,7 +36,7 @@
         <v-btn
           v-for="(item, index) in menuItems"
           :key="index"
-          class="menu-item fade-left"
+          class="menu-item"
           :class="{ 'active': selectedButton === item }"
           variant="text"
           align="start"
@@ -66,36 +66,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { useDisplay } from 'vuetify';
-import { onMounted } from 'vue';
-import ScrollReveal from 'scrollreveal';
 
 const display = useDisplay();
-
-onMounted(() => {
-  ScrollReveal().reveal('.reveal', {
-    duration: 1000,
-    origin: 'bottom',
-    distance: '50px',
-    delay: 200,
-    reset: true,
-  });
-
-  ScrollReveal().reveal('.fade-left', {
-    duration: 1200,
-    origin: 'left',
-    distance: '100px',
-    delay: 300,
-    reset: true,
-  });
-
-  ScrollReveal().reveal('.fade-right', {
-    duration: 1200,
-    origin: 'right',
-    distance: '100px',
-    delay: 300,
-    reset: true,
-  });
-});
 
 const cards = {
   "WDA Tecnologia e Inovação": {

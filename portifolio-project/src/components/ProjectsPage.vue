@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="teste">
     <p class="title mx-auto text-center mb-12 pt-12">Projetos</p>
     <v-row class="justify-space-evenly ga-12">
       <v-col cols="10" md="5">
@@ -26,7 +26,7 @@
 
       <v-col cols="10" md="5">
         <ProjectComponent
-          class="fade-right"
+          class="fade-left"
           title="Locadora de Livros - Quasar"
           description="Projeto Locadora de Livros desenvolvido com Vue e Quasar, testado com Robot Framework, Dockerizado e conectado com o backend Spring Boot."
           :technologies="['Vue', 'Quasar', 'Robot', 'Docker']"
@@ -36,7 +36,7 @@
         />
 
         <ProjectComponent
-          class="fade-right"
+          class="fade-left"
           title="Matematic"
           description="Projeto concebido para auxiliar os usuários na realização e compreensão de operações matemáticas com explicações passo a passo. Desenvolvido com HTML, CSS e JavaScript."
           :technologies="['HTML', 'CSS', 'JS']"
@@ -50,32 +50,8 @@
 
 <script setup lang="ts">
 import ProjectComponent from './ProjectComponent.vue';
-import ScrollReveal from "scrollreveal";
-import { onMounted } from 'vue';
-
-onMounted(() => {
-  ScrollReveal().reveal(".reveal", {
-    duration: 1000,
-    origin: "bottom",
-    distance: "50px",
-    delay: 200,
-    reset: true,
-  });
-
-  ScrollReveal().reveal(".fade-left", {
-    duration: 1200,
-    origin: "left",
-    distance: "100px",
-    delay: 400,
-    reset: true,
-  });
-
-  ScrollReveal().reveal(".fade-right", {
-    duration: 1200,
-    origin: "right",
-    distance: "100px",
-    delay: 300,
-    reset: true,
-  });
-});
 </script>
+
+<style scoped>
+
+</style>
