@@ -77,7 +77,7 @@ onMounted(() => {
     origin: 'bottom',
     distance: '50px',
     delay: 200,
-    reset: false,
+    reset: true,
   });
 
   ScrollReveal().reveal('.fade-left', {
@@ -85,6 +85,7 @@ onMounted(() => {
     origin: 'left',
     distance: '100px',
     delay: 300,
+    reset: true,
   });
 
   ScrollReveal().reveal('.fade-right', {
@@ -92,6 +93,7 @@ onMounted(() => {
     origin: 'right',
     distance: '100px',
     delay: 300,
+    reset: true,
   });
 });
 
