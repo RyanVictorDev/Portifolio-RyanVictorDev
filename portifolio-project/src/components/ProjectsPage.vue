@@ -33,10 +33,10 @@
         />
 
         <ProjectComponent
-          title="Locadora de Livros - Flutter"
-          description="Um projeto incrível desenvolvido com Vue e Vuetify."
-          :technologies="['Flutter', 'Dart']"
-          image="/images/flutterMockupOriginal.png"
+          title="Matematic"
+          description="Projeto concebido para auxiliar os usuários na realização e compreensão de operações matemáticas com explicações passo a passo. Desenvolvido com HTML, CSS e JavaScript."
+          :technologies="['HTML', 'CSS', 'JS']"
+          image="/images/matematicMockup.png"
           background-color="#4E342E"
         />
       </v-col>
