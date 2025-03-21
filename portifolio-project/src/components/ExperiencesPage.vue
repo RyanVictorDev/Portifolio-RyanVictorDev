@@ -7,7 +7,7 @@
         <v-btn
           v-for="(item, index) in menuItems"
           :key="index"
-          class="menu-item"
+          class="menu-item fade-left"
           :class="{ 'active': selectedButton === item }"
           variant="text"
           align="start"
@@ -17,7 +17,7 @@
         </v-btn>
       </v-col>
 
-      <v-col class="d-flex flex-column">
+      <v-col class="d-flex flex-column fade-right">
         <v-card class="overflow-auto bg-black" height="200">
           <div class="d-flex justify-between align-center">
             <v-card-title>{{ cards[selectedButton]?.title }}</v-card-title>
@@ -66,8 +66,34 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { useDisplay } from 'vuetify';
+import { onMounted } from 'vue';
+import ScrollReveal from 'scrollreveal';
 
 const display = useDisplay();
+
+onMounted(() => {
+  ScrollReveal().reveal('.reveal', {
+    duration: 1000,
+    origin: 'bottom',
+    distance: '50px',
+    delay: 200,
+    reset: false,
+  });
+
+  ScrollReveal().reveal('.fade-left', {
+    duration: 1200,
+    origin: 'left',
+    distance: '100px',
+    delay: 300,
+  });
+
+  ScrollReveal().reveal('.fade-right', {
+    duration: 1200,
+    origin: 'right',
+    distance: '100px',
+    delay: 300,
+  });
+});
 
 const cards = {
   "WDA Tecnologia e Inovação": {

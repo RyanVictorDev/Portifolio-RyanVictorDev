@@ -7,7 +7,7 @@
 
       <div class="d-flex my-auto content-overlay">
         <v-row v-if="display.mdAndUp.value" class="mx-auto justify-center">
-          <v-col class="text-center my-auto mx-auto" cols="7">
+          <v-col class="text-center my-auto mx-auto fade-left" cols="7">
             <div class="mb-4">
               <h1 class="text-h2 text-left font-weight-medium">RYAN VICTOR</h1>
               <Typewriter />
@@ -15,7 +15,7 @@
             <div class="text-body-1 text-justify font-weight-light text-left text-grey-lighten-1">Olá, sou Ryan Victor, desenvolvedor full stack apaixonado por tecnologia. Trabalho com Vue.js, Quasar, Java e Spring Boot, criando soluções web rápidas e eficientes. Sempre em busca de novos desafios, estou pronto para transformar ideias em realidade.</div>
           </v-col>
 
-          <v-col class="my-auto mx-auto" cols="3">
+          <v-col class="my-auto mx-auto fade-right" cols="3">
             <v-img
               class="my-auto"
               height="300"
@@ -25,7 +25,7 @@
         </v-row>
 
         <v-row v-else lass="mx-auto">
-          <v-col class="mx-auto" cols="8">
+          <v-col class="mx-auto fade-left" cols="8">
             <v-img
               class="my-auto"
               height="200"
@@ -33,7 +33,7 @@
             />
           </v-col>
 
-          <v-col class="text-center mx-auto" cols="8">
+          <v-col class="text-center mx-auto fade-left" cols="8">
             <div class="mb-4">
               <h1 class="text-h5 text-left font-weight-medium">RYAN VICTOR</h1>
               <Typewriter
@@ -45,7 +45,7 @@
         </v-row>
       </div>
 
-      <div class="d-flex ga-12 justify-center button-container">
+      <div class="d-flex ga-12 justify-center button-container reveal">
         <div>
           <v-btn class="button mx-auto rounded-pill border" color="transparent" dark target="_blank" href="https://github.com/RyanVictorDev">
             <v-icon size="large">mdi-github</v-icon>
@@ -71,8 +71,34 @@
 <script setup lang="ts">
   import Typewriter from './TypewriterEffect.vue';
   import { useDisplay } from 'vuetify';
+  import ScrollReveal from "scrollreveal";
+  import { onMounted } from 'vue';
 
   const display = useDisplay();
+
+  onMounted(() => {
+    ScrollReveal().reveal(".reveal", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+      reset: false,
+    });
+
+    ScrollReveal().reveal(".fade-left", {
+      duration: 1200,
+      origin: "left",
+      distance: "100px",
+      delay: 300,
+    });
+
+    ScrollReveal().reveal(".fade-right", {
+      duration: 1200,
+      origin: "right",
+      distance: "100px",
+      delay: 300,
+    });
+  });
 </script>
 
 <style scoped>

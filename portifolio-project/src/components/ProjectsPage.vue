@@ -4,6 +4,7 @@
     <v-row class="justify-space-evenly ga-12">
       <v-col cols="10" md="5">
         <ProjectComponent
+          class="fade-left"
           title="Locadora de Livros - Flutter"
           description="Projeto de locadora de livros criada em Flutter e Dart. Projeto desenvolvido para estudo e primeiros passos em Flutter."
           :technologies="['Flutter', 'Dart']"
@@ -13,6 +14,7 @@
         />
 
         <ProjectComponent
+          class="fade-left"
           title="Locadora de Livros - Spring Boot"
           description="Backend para a Locadora de Livros criado com Java, Spring Boot e Dockerizado. Sistema com authenticação de usuários e controle de registros e estoque."
           :technologies="['Java', 'Spring Boot', 'Docker', 'Postgres']"
@@ -24,6 +26,7 @@
 
       <v-col cols="10" md="5">
         <ProjectComponent
+          class="fade-right"
           title="Locadora de Livros - Quasar"
           description="Projeto Locadora de Livros desenvolvido com Vue e Quasar, testado com Robot Framework, Dockerizado e conectado com o backend Spring Boot."
           :technologies="['Vue', 'Quasar', 'Robot', 'Docker']"
@@ -33,6 +36,7 @@
         />
 
         <ProjectComponent
+          class="fade-right"
           title="Matematic"
           description="Projeto concebido para auxiliar os usuários na realização e compreensão de operações matemáticas com explicações passo a passo. Desenvolvido com HTML, CSS e JavaScript."
           :technologies="['HTML', 'CSS', 'JS']"
@@ -46,5 +50,30 @@
 
 <script setup lang="ts">
 import ProjectComponent from './ProjectComponent.vue';
+import ScrollReveal from "scrollreveal";
+import { onMounted } from 'vue';
 
+onMounted(() => {
+  ScrollReveal().reveal(".reveal", {
+    duration: 1000,
+    origin: "bottom",
+    distance: "50px",
+    delay: 200,
+    reset: false,
+  });
+
+  ScrollReveal().reveal(".fade-left", {
+    duration: 1200,
+    origin: "left",
+    distance: "100px",
+    delay: 400,
+  });
+
+  ScrollReveal().reveal(".fade-right", {
+    duration: 1200,
+    origin: "right",
+    distance: "100px",
+    delay: 300,
+  });
+});
 </script>
