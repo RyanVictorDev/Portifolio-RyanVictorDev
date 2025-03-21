@@ -5,29 +5,30 @@
       <v-col cols="10" md="5">
         <ProjectComponent
           title="Locadora de Livros - Flutter"
-          description="Um projeto incrível desenvolvido com Vue e Vuetify."
+          description="Projeto de locadora de livros criada em Flutter e Dart. Projeto desenvolvido para estudo e primeiros passos em Flutter."
           :technologies="['Flutter', 'Dart']"
           image="/images/flutterMockupOriginal.png"
-          background-color="blue"
+          background-color="#283593"
           project-link="https://github.com/RyanVictorDev/Locadora-Flutter"
         />
 
         <ProjectComponent
-          title="Locadora de Livros - Flutter"
-          description="Um projeto incrível desenvolvido com Vue e Vuetify."
-          :technologies="['Flutter', 'Dart']"
-          image="/images/note.png"
-          background-color="red"
+          title="Locadora de Livros - Spring Boot"
+          description="Backend para a Locadora de Livros criado com Java, Spring Boot e Dockerizado. Sistema com authenticação de usuários e controle de registros e estoque."
+          :technologies="['Java', 'Spring Boot', 'Docker', 'Postgres']"
+          image="/images/springbootMockup.png"
+          background-color="#00E676"
           project-link="https://github.com/RyanVictorDev/Locadora-Ryan"
         />
       </v-col>
+
       <v-col cols="10" md="5">
         <ProjectComponent
           title="Locadora de Livros - Quasar"
-          description="Um projeto incrível desenvolvido com Vue e Vuetify."
+          description="Projeto Locadora de Livros desenvolvido com Vue e Quasar, testado com Robot Framework, Dockerizado e conectado com o backend Spring Boot."
           :technologies="['Vue', 'Quasar', 'Robot', 'Docker']"
           image="/images/note.png"
-          background-color="purple"
+          background-color="#6200EA"
           project-link="https://github.com/RyanVictorDev/Locadora-Ryan"
         />
 
@@ -36,7 +37,7 @@
           description="Um projeto incrível desenvolvido com Vue e Vuetify."
           :technologies="['Flutter', 'Dart']"
           image="/images/flutterMockupOriginal.png"
-          background-color="green"
+          background-color="#4E342E"
         />
       </v-col>
     </v-row>

@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="componentWidth">
     <div class="image rounded-xl d-flex justify-center mb-3 pa-2" :style="{ backgroundColor: backgroundColor, backgroundImage: `linear-gradient(${backgroundColor}, rgb(3, 3, 3))` }">
       <img class="projectImage" :src="image" alt="">
     </div>
@@ -12,7 +12,7 @@
     <v-row class="mb-1">
       <v-col v-for="tecnology in technologies" :key="tecnology" cols="auto">
         <v-card class="pa-0 bg-#212121">
-          <v-card-title class="text-body-2 text-center text-white">
+          <v-card-title class="text-caption text-center text-white">
             {{ tecnology }}
           </v-card-title>
         </v-card>
@@ -56,6 +56,10 @@ defineProps({
 </script>
 
 <style scoped>
+.componentWidth {
+  width: 95%;
+}
+
 .image {
   width: 100%;
   max-height: fit-content;
