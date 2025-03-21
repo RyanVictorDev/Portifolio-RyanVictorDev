@@ -36,7 +36,7 @@
         <v-btn
           v-for="(item, index) in menuItems"
           :key="index"
-          class="menu-item"
+          class="menu-item fade-left"
           :class="{ 'active': selectedButton === item }"
           variant="text"
           align="start"
@@ -47,7 +47,7 @@
       </v-col>
 
       <v-col class="d-flex flex-column" cols="12">
-        <v-card class="overflow-auto bg-black" height="200">
+        <v-card class="overflow-auto bg-black reveal" height="200">
           <div class="d-flex flex-column justify-between align-center">
             <v-card-title class="mr-auto text-body-2">{{ cards[selectedButton]?.title }}</v-card-title>
             <v-card-subtitle class="mr-auto text-caption">{{ cards[selectedButton]?.subtitle }}</v-card-subtitle>
