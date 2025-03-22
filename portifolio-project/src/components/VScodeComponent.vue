@@ -55,12 +55,14 @@ const files = ref([
   { name: "CSS", icon: "mdi-language-css3", description: "CSS (Cascading Style Sheets) é usado para definir o estilo e layout das páginas web." },
   { name: "JavaScript", icon: "mdi-language-javascript", description: "JavaScript é uma linguagem de programação essencial para tornar páginas web interativas e dinâmicas." },
   { name: "Vue.js", icon: "mdi-vuejs", description: "Vue.js é um framework JavaScript progressivo para a construção de interfaces de usuário reativas." },
-  { name: "Quasar", icon: "mdi-vuejs", description: "Quasar Framework é baseado no Vue.js e permite criar aplicações responsivas para múltiplas plataformas." },
+  { name: "Quasar", icon: "mdi-lightning-bolt-outline", description: "Quasar Framework é baseado no Vue.js e permite criar aplicações responsivas para múltiplas plataformas." },
   { name: "Java", icon: "mdi-language-java", description: "Java é uma linguagem de programação versátil e amplamente usada no desenvolvimento de software empresarial." },
   { name: "Spring Boot", icon: "mdi-sprout", description: "Spring Boot é um framework que facilita a criação de aplicações Java, reduzindo configurações complexas." },
   { name: "Docker", icon: "mdi-docker", description: "Docker é uma plataforma que permite empacotar aplicações em contêineres para facilitar a implantação e escalabilidade." },
   { name: "Git", icon: "mdi-git", description: "Git é um sistema de controle de versão distribuído, essencial para o desenvolvimento colaborativo de software." },
   { name: "PostgreSQL", icon: "mdi-database", description: "PostgreSQL é um sistema de banco de dados relacional avançado, conhecido por sua robustez e extensibilidade." },
+  { name: "Figma", icon: "mdi-palette", description: "Figma é uma ferramenta de design colaborativo baseada na web, usada para criar protótipos de interfaces de usuário." },
+  { name: "GitHub", icon: "mdi-github", description: "GitHub é uma plataforma de hospedagem de código-fonte e colaboração, amplamente usada por desenvolvedores." },
 ]);
 
 interface Tech {

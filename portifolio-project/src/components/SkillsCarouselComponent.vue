@@ -49,6 +49,11 @@
       color: 'green-accent-4',
     },
     {
+      title: 'Quasar',
+      icon: 'mdi-lightning-bolt-outline',
+      color: 'indigo-accent-3',
+    },
+    {
       title: 'Java',
       icon: 'mdi-language-java',
       color: 'deep-purple accent-4',
@@ -77,6 +82,11 @@
       title: 'PostgreSQL',
       icon: 'mdi-database',
       color: 'blue-accent-4',
+    },
+    {
+      title: 'Figma',
+      icon: 'mdi-palette',
+      color: 'purple-darken-4',
     }
   ]
 </script>
