@@ -16,8 +16,11 @@ declare module 'vue' {
     ProjectsPage: typeof import('./src/components/ProjectsPage.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SkillsCarouselComponent: typeof import('./src/components/SkillsCarouselComponent.vue')['default']
+    SkillsCarrouselComponent: typeof import('./src/components/SkillsCarrouselComponent.vue')['default']
     SkillsPage: typeof import('./src/components/SkillsPage.vue')['default']
     SkilsPage: typeof import('./src/components/SkilsPage.vue')['default']
     TypewriterEffect: typeof import('./src/components/TypewriterEffect.vue')['default']
+    VScodeComponent: typeof import('./src/components/VScodeComponent.vue')['default']
   }
 }

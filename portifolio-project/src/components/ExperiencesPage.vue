@@ -36,7 +36,7 @@
         <v-btn
           v-for="(item, index) in menuItems"
           :key="index"
-          class="menu-item"
+          class="menu-item fade-left"
           :class="{ 'active': selectedButton === item }"
           variant="text"
           align="start"
