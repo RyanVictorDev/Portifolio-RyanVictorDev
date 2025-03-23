@@ -1,5 +1,5 @@
 <template>
-  <v-container class="teste">
+  <v-container class="">
     <p class="title mx-auto text-center mb-12 pt-12">Projetos</p>
     <v-row class="justify-space-evenly ga-12">
       <v-col cols="10" md="5">
@@ -20,7 +20,7 @@
           :technologies="['Java', 'Spring Boot', 'Docker', 'Postgres']"
           image="/images/springbootMockup.png"
           background-color="#00E676"
-          project-link="https://github.com/RyanVictorDev/Locadora-Ryan"
+          project-link="https://github.com/RyanVictorDev/LocadoraJava"
         />
       </v-col>
 
@@ -42,14 +42,43 @@
           :technologies="['HTML', 'CSS', 'JS']"
           image="/images/matematicMockup.png"
           background-color="#4E342E"
+          project-link="https://github.com/RyanVictorDev/Projeto-Matematic"
+        />
+
+        <ProjectComponent
+          class="fade-left"
+          title="StayOn"
+          description="Projeto destinado a pessoas que estão se preparando para vestibulares como o da UECE e o ENEM. Oferece uma previsão do resultado para aqueles que já realizaram."
+          :technologies="['HTML', 'CSS', 'JS']"
+          image="/images/stayOnMockup.png"
+          background-color="#880E4F"
+          project-link="https://github.com/RyanVictorDev/Projeto-StayOn"
         />
       </v-col>
     </v-row>
+
+    <!-- <div class="mx-auto text-center">
+      <v-btn
+        color="black"
+        class="border"
+        @click="expand"
+        v-if="!expanded"
+      >
+        Exibir mais
+      </v-btn>
+    </div> -->
   </v-container>
 </template>
 
 <script setup lang="ts">
 import ProjectComponent from './ProjectComponent.vue';
+// import { ref } from 'vue';
+
+// const expanded = ref(false);
+
+// const expand = () => {
+//   expanded.value = !expanded.value;
+// };
 </script>
 
 <style scoped>

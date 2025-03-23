@@ -2,7 +2,7 @@
   <v-container class="d-flex flex-column fill-height">
     <p class="title mx-auto text-center mb-12 pt-12">Contato</p>
 
-    <v-card class="pa-6 rounded-lg card">
+    <v-card class="pa-6 rounded-lg card reveal">
       <v-card-title class="text-h5 text-center mb-6">Entre em Contato</v-card-title>
 
       <v-form ref="form" v-model="valid" lazy-validation>

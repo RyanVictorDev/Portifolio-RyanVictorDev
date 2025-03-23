@@ -79,7 +79,7 @@ const selectedTech = ref<Tech | null>(null);
   display: flex;
   flex-direction: column;
   background-color: #1e1e1e;
-  height: 43rem;
+  height: 50rem;
   border-radius: 8px;
 }
 
